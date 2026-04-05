@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小手机</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="phone">
+        <div class="status-bar">
+            <div class="time" id="time"></div>
+            <div class="battery">🔋 92%</div>
+        </div>
+
+        <div class="home-screen" id="homeScreen">
+            <div class="app-grid">
+                <div class="app" data-app="chat">
+                    <div class="app-icon">💬</div>
+                    <div class="app-name">微信</div>
+                </div>
+                <div class="app" data-app="music">
+                    <div class="app-icon">🎵</div>
+                    <div class="app-name">网易云</div>
+                </div>
+                <div class="app" data-app="setting">
+                    <div class="app-icon">⚙️</div>
+                    <div class="app-name">设置</div>
+                </div>
+            </div>
+
+            <div class="dock">
+                <div class="dock-item" data-app="chat">💬</div>
+                <div class="dock-item" data-app="music">🎵</div>
+                <div class="dock-item" data-app="setting">⚙️</div>
+            </div>
+        </div>
+
+        <div class="app-page" id="chatPage" style="display: none;">
+            <div class="page-header">
+                <button class="back-btn" id="chatBack">←</button>
+                <div class="page-title">微信</div>
+            </div>
+            <div class="chat-list">
+                <div class="chat-item">
+                    <div class="avatar">👤</div>
+                    <div class="chat-info">
+                        <div class="name">好友A</div>
+                        <div class="msg">在吗？</div>
+                    </div>
+                    <div class="time">22:08</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-page" id="musicPage" style="display: none;">
+            <div class="page-header">
+                <button class="back-btn" id="musicBack">←</button>
+                <div class="page-title">网易云</div>
+            </div>
+            <div class="music-list">
+                <div class="music-item">
+                    <div class="cover">🎵</div>
+                    <div class="music-info">
+                        <div class="name">歌曲1</div>
+                        <div class="singer">歌手1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-page" id="settingPage" style="display: none;">
+            <div class="page-header">
+                <button class="back-btn" id="settingBack">←</button>
+                <div class="page-title">设置</div>
+            </div>
+            <div class="setting-list">
+                <div class="setting-item">
+                    <div class="icon">🔔</div>
+                    <div class="name">通知</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+                  </html>
